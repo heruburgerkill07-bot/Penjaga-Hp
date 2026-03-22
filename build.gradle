@@ -1,4 +1,4 @@
-// Ini pengaturan dasar proyek kita
+// File: build.gradle (di luar/root)
 buildscript {
     repositories {
         google()
