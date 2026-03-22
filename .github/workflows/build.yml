@@ -17,10 +17,11 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '8.5'
-          cache-disabled: true # Kita matikan cache sementara
+          cache-disabled: true # Memaksa koki pakai bahan baru
 
       - name: Build with Gradle
-        run: gradle assembleDebug
+        # Kita pakai perintah 'clean' dulu baru 'assembleDebug'
+        run: gradle clean assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
