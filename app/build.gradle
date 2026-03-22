@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'com.boss.kredit.penjaga'
     compileSdk 33
+
     defaultConfig {
         applicationId "com.boss.kredit.penjaga"
         minSdk 21
