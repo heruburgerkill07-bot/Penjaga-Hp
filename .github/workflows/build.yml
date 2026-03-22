@@ -23,4 +23,3 @@ jobs:
         with:
           name: Penjaga-Kredit-Debug
           path: app/build/outputs/apk/debug/*.apk
-          
