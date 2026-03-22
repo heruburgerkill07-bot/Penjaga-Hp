@@ -8,13 +8,18 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.boss.kredit.penjaga" // Harus sama dengan package_name di JSON Bos
+        applicationId "com.boss.kredit.penjaga"
         minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0"
     }
 
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -22,7 +27,6 @@ android {
 }
 
 dependencies {
-    // Gunakan versi ini agar sinkron dengan API Key di JSON
     implementation platform('com.google.firebase:firebase-bom:32.7.0')
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'androidx.appcompat:appcompat:1.6.1'
