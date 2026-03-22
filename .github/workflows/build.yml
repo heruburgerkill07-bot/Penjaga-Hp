@@ -16,7 +16,8 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.5' # Mengunci versi agar tidak mencari gradlew lokal
+          gradle-version: '8.5'
+          cache-disabled: true # Kita matikan cache sementara
 
       - name: Build with Gradle
         run: gradle assembleDebug
